@@ -62,20 +62,21 @@ Execute each cell in the notebook to perform the data analysis.
 # Analysis.
 
 # 1. Data Exploration
-## Initial Data Exploration
 In this step, we examine the basic properties of the dataset to understand its structure and contents. This includes:
 
-Loading the Data: We read the dataset into a DataFrame and inspected the first few rows to get an overview of the data.
-Column Names and Data Types: We checked the names of the columns and their respective data types to ensure they are as expected and to identify any necessary data type conversions.
+- **Loading the Data**: We read the dataset into a DataFrame and inspected the first few rows to get an overview of the data.
+- **Column Names and Data Types**: We checked the names of the columns and their respective data types to ensure they are as expected and to identify any necessary data type conversions.
 
-** Load the dataset
+```python
+# Load the dataset
 df = pd.read_csv(r'C:\Users\María\Downloads\E-commerce.csv')
 
-** Display the first few rows
+# Display the first few rows
 df.head()
 
-** Display column names and data types
+# Display column names and data types
 df.info()
+
 
 ## Interpretation:
 
