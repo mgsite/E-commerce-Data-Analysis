@@ -183,7 +183,12 @@ plt.show()
 
 Using K-Means clustering, we segmented the customers based on features such as Annual Income, Age, and Product Reviews. The clustering results help us identify distinct customer groups with similar characteristics.
 
-![Customer Segmentation](images/customer_segmentation.png)
+-***Customer Segmentation***
+![image](https://github.com/user-attachments/assets/2b259031-5b44-4716-a9a5-46d6d584e7f6)
+
+
+
+
 
 **Interpretation**:
 - **Cluster 0**: Customers in this segment have lower annual incomes but higher product reviews. They might be frequent but lower-value customers.
@@ -197,7 +202,9 @@ This segmentation allows us to tailor marketing strategies and product offerings
 
 We analyzed the average product reviews by location to understand how customer satisfaction varies across different regions.
 
-![Average Product Reviews by Location](images/avg_product_reviews_by_location.png)
+![image](https://github.com/user-attachments/assets/808bc245-b674-40ab-b2e8-6a62c0efd655)
+
+
 
 **Interpretation**:
 - **Location A**: Shows the highest average product reviews, indicating a region with highly satisfied customers. Marketing efforts and product focus could be intensified here.
