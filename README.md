@@ -33,9 +33,9 @@ Make sure you have the following libraries installed:
 
 You can install the necessary libraries using pip:
 
-
+```
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-
+```
 
 # How to Run
 ### 1. Clone the Repository
