@@ -171,6 +171,7 @@ Trends: Identified patterns over time, helping to understand whether purchasing 
 
 
 ## 4. Results
+
 ### Customer Segmentation
 
 Using K-Means clustering, we segmented the customers based on features such as Annual Income, Age, and Product Reviews. The clustering results help us identify distinct customer groups with similar characteristics.
@@ -197,7 +198,6 @@ We analyzed the average product reviews by location to understand how customer s
 - **Location C**: Exhibits lower average reviews, which could signal issues with customer satisfaction or product quality in this area. Investigating further could help address these issues and improve customer experience.
 
 By focusing on these insights, businesses can prioritize regions with higher customer satisfaction and address concerns in areas with lower reviews to enhance overall customer experience.
-
 
 # Contributing
 Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
