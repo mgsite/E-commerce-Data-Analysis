@@ -39,16 +39,16 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 
 # How to Run
 ### 1. Clone the Repository
-
+```
 git clone https://github.com/yourusername/e-commerce-customer-behavior-analysis.git
 cd e-commerce-customer-behavior-analysis
-
+```
 ### 2. Navigate to the Jupyter Notebook
 
 Open the Jupyter Notebook:
-
+```
 jupyter notebook
-
+```
 Open the E-commerce_Analysis.ipynb notebook.
 
 ### 3. Load the Dataset
