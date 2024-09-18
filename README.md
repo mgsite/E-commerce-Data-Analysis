@@ -67,7 +67,7 @@ In this step, we examine the basic properties of the dataset to understand its s
 - **Loading the Data**: We read the dataset into a DataFrame and inspected the first few rows to get an overview of the data.
 - **Column Names and Data Types**: We checked the names of the columns and their respective data types to ensure they are as expected and to identify any necessary data type conversions.
 
-```python
+```
 # Load the dataset
 df = pd.read_csv(r'C:\Users\María\Downloads\E-commerce.csv')
 
@@ -76,37 +76,39 @@ df.head()
 
 # Display column names and data types
 df.info()
-
+```
 
 ## Interpretation:
+The dataset contains columns such as Customer ID, Age, Gender, Location, Annual Income, Purchase History, Browsing History, Product Reviews, and Time on Site. Data types were verified to ensure proper handling during analysis (e.g., numerical, categorical).
 
-The dataset contains columns such as Customer ID, Age, Gender, Location, Annual Income, Purchase History, Browsing History, Product Reviews, and Time on Site.
-Data types were verified to ensure proper handling during analysis (e.g., numerical, categorical).
-
-## Descriptive Statistics
+# Descriptive Statistics
 Descriptive statistics provide a summary of the central tendencies, dispersion, and shape of the dataset's distribution. This includes:
+-**Summary Statistics**: Mean, median, standard deviation, minimum, and maximum values for numerical columns.
+-**Frequency Counts**: Counts for categorical variables like Gender and Location.
 
-Summary Statistics: Mean, median, standard deviation, minimum, and maximum values for numerical columns.
-Frequency Counts: Counts for categorical variables like Gender and Location.
-
-#Summary statistics for numerical columns
+```
+# Summary statistics for numerical columns
 df.describe()
-#Frequency counts for categorical columns
+
+# Frequency counts for categorical columns
 df['Gender'].value_counts()
 df['Location'].value_counts()
 
+```
 ## Interpretation:
 
 Key statistics such as average age, income levels, and purchase history frequencies were calculated.
 Categorical variables like Gender and Location were summarized to understand the distribution of different categories.
 
+
 # 2. Exploratory Data Analysis (EDA)
 ## Distribution Analysis
 This analysis focuses on the distribution of individual features to understand their spread and central tendencies. Key aspects include:
 
-Age Distribution: Analyzed how customer ages are distributed across the dataset.
-Annual Income Distribution: Examined the distribution of annual incomes.
+-**Age Distribution**: Analyzed how customer ages are distributed across the dataset.
+-**Annual Income Distribution**: Examined the distribution of annual incomes.
 
+```python
 
 #Distribution of customer age
 sns.histplot(df['Age'], kde=True)
@@ -121,17 +123,21 @@ plt.title('Annual Income Distribution')
 plt.xlabel('Annual Income')
 plt.ylabel('Frequency')
 plt.show()
-Interpretation:
 
-Age Distribution: Provided insights into the age range of customers, showing whether the customer base is young, middle-aged, or elderly.
-Annual Income Distribution: Illustrated income levels, helping to understand the economic profile of customers.
+```
+
+### Interpretation:
+
+-**Age Distribution**: Provided insights into the age range of customers, showing whether the customer base is young, middle-aged, or elderly.
+-**Annual Income Distribution**: Illustrated income levels, helping to understand the economic profile of customers.
 
 ## Revenue by Location
 This analysis assesses how revenue is distributed across different locations to identify regional performance:
 
-Revenue Calculation: Aggregated revenue data by location.
-Visualization: Used bar plots to compare revenue across locations.
+-**Revenue Calculation**: Aggregated revenue data by location.
+-**Visualization**: Used bar plots to compare revenue across locations.
 
+```
 #Calculate revenue by location
 revenue_by_location = df.groupby('Location')['Annual Income'].sum().reset_index()
 
@@ -141,17 +147,18 @@ plt.title('Revenue by Location')
 plt.xlabel('Location')
 plt.ylabel('Total Revenue')
 plt.show()
+```
+### Interpretation:
 
-## Interpretation:
+- Identified which locations generate the most revenue.
+- Provided insights into regional performance, guiding resource allocation and marketing strategies.
 
-Identified which locations generate the most revenue.
-Provided insights into regional performance, guiding resource allocation and marketing strategies.
-Customer Purchase Behavior
+# 3. Customer Purchase Behavior
 This analysis examines the patterns and trends in customer purchase behavior:
 
 ## Purchase Frequency: Analyzed how often customers make purchases.
 Purchase Trends: Examined trends over time, if time-based data is available.
-
+```
 #Frequency of purchases
 purchase_counts = df['Purchase History'].apply(lambda x: len(x.split(','))).value_counts()
 
@@ -161,11 +168,11 @@ plt.title('Purchase Frequency Distribution')
 plt.xlabel('Number of Purchases')
 plt.ylabel('Frequency')
 plt.show()
+```
+### Interpretation:
 
-## Interpretation:
-
-Purchase Frequency: Provided insights into how frequently customers purchase, indicating the level of engagement.
-Trends: Identified patterns over time, helping to understand whether purchasing behavior is seasonal or consistent.
+-**Purchase Frequency**: Provided insights into how frequently customers purchase, indicating the level of engagement.
+-**Trends**: Identified patterns over time, helping to understand whether purchasing behavior is seasonal or consistent.
 
 
 
