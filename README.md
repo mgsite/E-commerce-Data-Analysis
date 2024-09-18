@@ -33,11 +33,11 @@ Make sure you have the following libraries installed:
 
 You can install the necessary libraries using pip:
 
-```bash
+
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 
 
-## How to Run
+# How to Run
 ### 1. Clone the Repository
 
 git clone https://github.com/yourusername/e-commerce-customer-behavior-analysis.git
