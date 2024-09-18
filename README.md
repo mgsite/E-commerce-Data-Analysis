@@ -170,7 +170,7 @@ Trends: Identified patterns over time, helping to understand whether purchasing 
 
 
 
-## 4. Results
+# 4. Results
 
 ### Customer Segmentation
 
