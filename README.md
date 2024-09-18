@@ -68,14 +68,15 @@ In this step, we examine the basic properties of the dataset to understand its s
 Loading the Data: We read the dataset into a DataFrame and inspected the first few rows to get an overview of the data.
 Column Names and Data Types: We checked the names of the columns and their respective data types to ensure they are as expected and to identify any necessary data type conversions.
 
-#Load the dataset
+# Load the dataset
 df = pd.read_csv(r'C:\Users\María\Downloads\E-commerce.csv')
 
-#Display the first few rows
+# Display the first few rows
 df.head()
 
-#Display column names and data types
+# Display column names and data types
 df.info()
+
 Interpretation:
 
 The dataset contains columns such as Customer ID, Age, Gender, Location, Annual Income, Purchase History, Browsing History, Product Reviews, and Time on Site.
